@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ABCsForKids</string>
+
+    <string name="game_letter_a">A</string>
+    <string name="game_letter_b">B</string>
+    <string name="game_letter_c">C</string>
+    <string name="game_letter_d">D</string>
+    <string name="game_letter_e">E</string>
+    <string name="game_letter_f">F</string>
+    <string name="game_letter_g">G</string>
+    <string name="game_letter_h">H</string>
+    <string name="game_letter_i">I</string>
+    <string name="game_letter_j">J</string>
+    <string name="game_letter_k">K</string>
+    <string name="game_letter_l">L</string>
+    <string name="game_letter_m">M</string>
+    <string name="game_letter_n">N</string>
+    <string name="game_letter_o">O</string>
+    <string name="game_letter_p">P</string>
+    <string name="game_letter_q">Q</string>
+    <string name="game_letter_r">R</string>
+    <string name="game_letter_s">S</string>
+    <string name="game_letter_t">T</string>
+    <string name="game_letter_u">U</string>
+    <string name="game_letter_v">V</string>
+    <string name="game_letter_w">W</string>
+    <string name="game_letter_x">X</string>
+    <string name="game_letter_y">Y</string>
+    <string name="game_letter_z">Z</string>
+</resources>
