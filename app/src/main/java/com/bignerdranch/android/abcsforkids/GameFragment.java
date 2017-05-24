@@ -1,5 +1,7 @@
 package com.bignerdranch.android.abcsforkids;
 
+import android.os.CountDownTimer;
+import android.os.Handler;
 import android.view.DragEvent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -12,6 +14,7 @@ import android.widget.TextView;
 
 
 import java.util.List;
+import java.util.logging.LogRecord;
 
 /**
  * Created by Michael Juarez on 5/22/2017.
@@ -52,7 +55,7 @@ public class GameFragment extends Fragment {
         letter3.setOnTouchListener(TouchListener);
         letter4.setOnTouchListener(TouchListener);
 
-        displayImages(letterIndex);
+        displayImages();
 
         return view;
     }
@@ -61,11 +64,11 @@ public class GameFragment extends Fragment {
         This method will display images in alphabetical order for now
         In the future, I plan to have the option to randomize the letters.
     */
-    private void displayImages(int letterIndex) {
+    private void displayImages() {
         GameImageBank gameBank = GameImageBank.get(getActivity());
         List<Game> games = gameBank.getGameImageBank();
 
-        String correctAnswer = games.get(letterIndex).getAnswerList().get(41);
+        String correctAnswer = games.get(letterIndex).getAnswerList().get(4);
         String answer0 = games.get(letterIndex).getAnswerList().get(0);
         String answer1 = games.get(letterIndex).getAnswerList().get(1);
         String answer2 = games.get(letterIndex).getAnswerList().get(2);
@@ -109,29 +112,77 @@ public class GameFragment extends Fragment {
                 case DragEvent.ACTION_DRAG_ENTERED:
                     break;
                 case DragEvent.ACTION_DRAG_EXITED:
+                    View exitView = (View) event.getLocalState();
+                    exitView.setVisibility(View.VISIBLE);
                     break;
                 case DragEvent.ACTION_DROP:
                     final View view = (View) event.getLocalState();
-                    if (view.getId() == R.id.letter1 && booleanCorrectAnswer1) {
-                        gameImage.setImageResource(R.drawable.correct);
-                        booleanCorrectAnswer1 = false;
+                    if (view.getId() == R.id.letter1) {
+                        letter1.setVisibility(View.INVISIBLE);
+                        if (booleanCorrectAnswer1) {
+                            gameImage.setImageResource(R.drawable.correct);
+                            waitHelper();
+                        }
                     }
-                    else if (view.getId() == R.id.letter2 && booleanCorrectAnswer2) {
-                        gameImage.setImageResource(R.drawable.correct);
-                        booleanCorrectAnswer2 = false;
+                    else if (view.getId() == R.id.letter2) {
+                        letter2.setVisibility(View.INVISIBLE);
+                        if (booleanCorrectAnswer2) {
+                            gameImage.setImageResource(R.drawable.correct);
+                            waitHelper();
+                        }
+
                     }
-                    else if (view.getId() == R.id.letter3 && booleanCorrectAnswer3) {
-                        gameImage.setImageResource(R.drawable.correct);
-                        booleanCorrectAnswer3 = false;
+                    else if (view.getId() == R.id.letter3) {
+                        letter3.setVisibility(View.INVISIBLE);
+                        if (booleanCorrectAnswer3) {
+                            gameImage.setImageResource(R.drawable.correct);
+                            waitHelper();
+                        }
+
                     }
-                    else if (view.getId() == R.id.letter4 && booleanCorrectAnswer4) {
-                        gameImage.setImageResource(R.drawable.correct);
-                        booleanCorrectAnswer4 = false;
+                    else if (view.getId() == R.id.letter4) {
+                        letter4.setVisibility(View.INVISIBLE);
+                        if (booleanCorrectAnswer4) {
+                            gameImage.setImageResource(R.drawable.correct);
+                            waitHelper();
+                        }
+
                     }
                     break;
             }
+
+
+
             return true;
         }
     };
 
+    private void resetGameFragment() {
+
+        letter1.setVisibility(View.VISIBLE);
+        letter2.setVisibility(View.VISIBLE);
+        letter3.setVisibility(View.VISIBLE);
+        letter4.setVisibility(View.VISIBLE);
+
+        booleanCorrectAnswer1 = false;
+        booleanCorrectAnswer2 = false;
+        booleanCorrectAnswer3 = false;
+        booleanCorrectAnswer4 = false;
+    }
+
+    private void waitHelper() {
+        new CountDownTimer(2000,1000){
+
+            @Override
+            public void onTick(long miliseconds){}
+
+            @Override
+            public void onFinish(){
+                resetGameFragment();
+                letterIndex++;
+                displayImages();
+            }
+        }.start();
+
+    }
 }

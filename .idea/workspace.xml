@@ -18,14 +18,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b37ea6b3-413c-44c6-938c-2ffaaec06117" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/abcsforkids/Game.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/abcsforkids/GameImageBank.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-05-22-16-12-39-859.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-05-22-16-14-39-927.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-05-22-16-20-31-372.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-05-22-16-23-49-345.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-05-22-16-26-18-978.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/game_screen_question_image_ball2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/game_screen_question_image_ball2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/game_screen_question_image_ball2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/game_screen_question_image_ball2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/game_screen_question_image_ball2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/game_screen_question_image_ball2.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
@@ -34,10 +32,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/abcsforkids/Game.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/abcsforkids/Game.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/abcsforkids/GameFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/abcsforkids/GameFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_game_fragment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_game_fragment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <ignored path="ABCsForKids.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,17 +65,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GameFragment.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/abcsforkids/GameFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="67" column="76" selection-start-line="67" selection-start-column="76" selection-end-line="67" selection-end-column="76" />
+            <state relative-caret-position="-714">
+              <caret line="67" column="53" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3673#3966#0" expanded="true" />
-                <element signature="e#3965#3966#0" expanded="true" />
-                <element signature="e#4016#5484#0" expanded="true" />
-                <element signature="e#5483#5484#0" expanded="true" />
+                <element signature="e#3743#4036#0" expanded="true" />
+                <element signature="e#4035#4036#0" expanded="true" />
+                <element signature="e#4086#6116#0" expanded="true" />
+                <element signature="e#6115#6116#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameImageBank.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/abcsforkids/GameImageBank.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -134,18 +142,69 @@
             <state relative-caret-position="178">
               <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
               <folding>
-                <element signature="e#8330#8331#0" expanded="true" />
+                <element signature="e#0#60439#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#2363#2364#0" expanded="false" />
+                <element signature="e#2389#2390#0" expanded="false" />
+                <element signature="e#2511#2512#0" expanded="false" />
+                <element signature="e#2537#2538#0" expanded="false" />
+                <element signature="e#3984#4052#0" expanded="false" />
+                <element signature="e#4182#4249#0" expanded="false" />
+                <element signature="e#4386#4453#0" expanded="false" />
+                <element signature="e#4518#4519#0" expanded="false" />
+                <element signature="e#4553#4554#0" expanded="false" />
+                <element signature="e#8109#8110#0" expanded="false" />
+                <element signature="e#8144#8145#0" expanded="false" />
+                <element signature="e#8195#8196#0" expanded="false" />
+                <element signature="e#8234#8235#0" expanded="false" />
+                <element signature="e#8374#8375#0" expanded="false" />
+                <element signature="e#8415#8416#0" expanded="false" />
+                <element signature="e#29122#29123#0" expanded="false" />
+                <element signature="e#29152#29153#0" expanded="false" />
+                <element signature="e#29185#29186#0" expanded="false" />
+                <element signature="e#29215#29216#0" expanded="false" />
+                <element signature="e#29248#29249#0" expanded="false" />
+                <element signature="e#29278#29279#0" expanded="false" />
+                <element signature="e#29319#29320#0" expanded="false" />
+                <element signature="e#29355#29356#0" expanded="false" />
+                <element signature="e#29396#29397#0" expanded="false" />
+                <element signature="e#29432#29433#0" expanded="false" />
+                <element signature="e#29472#29473#0" expanded="false" />
+                <element signature="e#29507#29508#0" expanded="false" />
+                <element signature="e#29541#29542#0" expanded="false" />
+                <element signature="e#29572#29573#0" expanded="false" />
+                <element signature="e#29608#29609#0" expanded="false" />
+                <element signature="e#29643#29644#0" expanded="false" />
+                <element signature="e#29694#29695#0" expanded="false" />
+                <element signature="e#29744#29745#0" expanded="false" />
+                <element signature="e#29799#29800#0" expanded="false" />
+                <element signature="e#29853#29854#0" expanded="false" />
+                <element signature="e#48138#48139#0" expanded="false" />
+                <element signature="e#48178#48179#0" expanded="false" />
+                <element signature="e#48227#48228#0" expanded="false" />
+                <element signature="e#48267#48268#0" expanded="false" />
+                <element signature="e#48315#48316#0" expanded="false" />
+                <element signature="e#48362#48363#0" expanded="false" />
+                <element signature="e#48421#48422#0" expanded="false" />
+                <element signature="e#48469#48470#0" expanded="false" />
+                <element signature="e#48521#48522#0" expanded="false" />
+                <element signature="e#48571#48572#0" expanded="false" />
+                <element signature="e#54172#54221#0" expanded="false" />
+                <element signature="e#55760#55761#0" expanded="false" />
+                <element signature="e#55800#55801#0" expanded="false" />
+                <element signature="e#55852#55853#0" expanded="false" />
+                <element signature="e#55894#55895#0" expanded="false" />
+                <element signature="e#55948#55949#0" expanded="false" />
+                <element signature="e#55998#55999#0" expanded="false" />
+                <element signature="e#56024#56025#0" expanded="false" />
+                <element signature="e#56061#56062#0" expanded="false" />
+                <element signature="e#56116#56117#0" expanded="false" />
+                <element signature="e#56160#56161#0" expanded="false" />
+                <element signature="e#56208#56209#0" expanded="false" />
+                <element signature="e#56254#56255#0" expanded="false" />
+                <element signature="e#60289#60290#0" expanded="false" />
+                <element signature="e#60343#60344#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppCompatActivity.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/25.3.1/appcompat-v7-25.3.1-sources.jar!/android/support/v7/app/AppCompatActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="548" column="0" selection-start-line="548" selection-start-column="0" selection-end-line="548" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -174,18 +233,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/abcsforkids/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="270" column="0" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
+            <state relative-caret-position="-5639">
+              <caret line="218" column="60" selection-start-line="218" selection-start-column="60" selection-end-line="218" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#8559#8560#0" expanded="true" />
-                <element signature="e#8591#8592#0" expanded="true" />
-                <element signature="e#8624#8625#0" expanded="true" />
-                <element signature="e#8653#8654#0" expanded="true" />
-                <element signature="e#8729#8730#0" expanded="true" />
+                <element signature="e#16629#16630#0" expanded="true" />
+                <element signature="e#16661#16662#0" expanded="true" />
+                <element signature="e#16694#16695#0" expanded="true" />
+                <element signature="e#16723#16724#0" expanded="true" />
+                <element signature="e#16766#16767#0" expanded="true" />
+                <element signature="e#16799#16800#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2001,14 +2061,14 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/abcsforkids/MainScreenFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_game_fragment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/abcsforkids/GameImageBank.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/abcsforkids/Game.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/abcsforkids/GameFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/abcsforkids/Game.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1096" />
@@ -2104,24 +2164,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ABCsForKids" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2788,7 +2830,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2797,7 +2839,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41151386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41151386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2805,7 +2847,7 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2834,7 +2876,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -3088,18 +3130,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/abcsforkids/GameImageBank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1512#1513#0" expanded="true" />
-            <element signature="e#1541#1542#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/25.3.1/appcompat-v7-25.3.1-sources.jar!/android/support/v7/app/AppCompatDelegate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
@@ -3121,7 +3151,7 @@
         <state relative-caret-position="178">
           <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
           <folding>
-            <element signature="e#4276#4277#0" expanded="true" />
+            <element signature="e#4276#4277#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3131,21 +3161,6 @@
         <state relative-caret-position="382">
           <caret line="548" column="0" selection-start-line="548" selection-start-column="0" selection-end-line="548" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/abcsforkids/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="270" column="0" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#8559#8560#0" expanded="true" />
-            <element signature="e#8591#8592#0" expanded="true" />
-            <element signature="e#8624#8625#0" expanded="true" />
-            <element signature="e#8653#8654#0" expanded="true" />
-            <element signature="e#8729#8730#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3174,7 +3189,68 @@
         <state relative-caret-position="178">
           <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
           <folding>
-            <element signature="e#8330#8331#0" expanded="true" />
+            <element signature="e#0#60439#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2363#2364#0" expanded="false" />
+            <element signature="e#2389#2390#0" expanded="false" />
+            <element signature="e#2511#2512#0" expanded="false" />
+            <element signature="e#2537#2538#0" expanded="false" />
+            <element signature="e#3984#4052#0" expanded="false" />
+            <element signature="e#4182#4249#0" expanded="false" />
+            <element signature="e#4386#4453#0" expanded="false" />
+            <element signature="e#4518#4519#0" expanded="false" />
+            <element signature="e#4553#4554#0" expanded="false" />
+            <element signature="e#8109#8110#0" expanded="false" />
+            <element signature="e#8144#8145#0" expanded="false" />
+            <element signature="e#8195#8196#0" expanded="false" />
+            <element signature="e#8234#8235#0" expanded="false" />
+            <element signature="e#8374#8375#0" expanded="false" />
+            <element signature="e#8415#8416#0" expanded="false" />
+            <element signature="e#29122#29123#0" expanded="false" />
+            <element signature="e#29152#29153#0" expanded="false" />
+            <element signature="e#29185#29186#0" expanded="false" />
+            <element signature="e#29215#29216#0" expanded="false" />
+            <element signature="e#29248#29249#0" expanded="false" />
+            <element signature="e#29278#29279#0" expanded="false" />
+            <element signature="e#29319#29320#0" expanded="false" />
+            <element signature="e#29355#29356#0" expanded="false" />
+            <element signature="e#29396#29397#0" expanded="false" />
+            <element signature="e#29432#29433#0" expanded="false" />
+            <element signature="e#29472#29473#0" expanded="false" />
+            <element signature="e#29507#29508#0" expanded="false" />
+            <element signature="e#29541#29542#0" expanded="false" />
+            <element signature="e#29572#29573#0" expanded="false" />
+            <element signature="e#29608#29609#0" expanded="false" />
+            <element signature="e#29643#29644#0" expanded="false" />
+            <element signature="e#29694#29695#0" expanded="false" />
+            <element signature="e#29744#29745#0" expanded="false" />
+            <element signature="e#29799#29800#0" expanded="false" />
+            <element signature="e#29853#29854#0" expanded="false" />
+            <element signature="e#48138#48139#0" expanded="false" />
+            <element signature="e#48178#48179#0" expanded="false" />
+            <element signature="e#48227#48228#0" expanded="false" />
+            <element signature="e#48267#48268#0" expanded="false" />
+            <element signature="e#48315#48316#0" expanded="false" />
+            <element signature="e#48362#48363#0" expanded="false" />
+            <element signature="e#48421#48422#0" expanded="false" />
+            <element signature="e#48469#48470#0" expanded="false" />
+            <element signature="e#48521#48522#0" expanded="false" />
+            <element signature="e#48571#48572#0" expanded="false" />
+            <element signature="e#54172#54221#0" expanded="false" />
+            <element signature="e#55760#55761#0" expanded="false" />
+            <element signature="e#55800#55801#0" expanded="false" />
+            <element signature="e#55852#55853#0" expanded="false" />
+            <element signature="e#55894#55895#0" expanded="false" />
+            <element signature="e#55948#55949#0" expanded="false" />
+            <element signature="e#55998#55999#0" expanded="false" />
+            <element signature="e#56024#56025#0" expanded="false" />
+            <element signature="e#56061#56062#0" expanded="false" />
+            <element signature="e#56116#56117#0" expanded="false" />
+            <element signature="e#56160#56161#0" expanded="false" />
+            <element signature="e#56208#56209#0" expanded="false" />
+            <element signature="e#56254#56255#0" expanded="false" />
+            <element signature="e#60289#60290#0" expanded="false" />
+            <element signature="e#60343#60344#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3214,16 +3290,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/abcsforkids/GameFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/abcsforkids/GameImageBank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="67" column="76" selection-start-line="67" selection-start-column="76" selection-end-line="67" selection-end-column="76" />
+        <state relative-caret-position="340">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3673#3966#0" expanded="true" />
-            <element signature="e#3965#3966#0" expanded="true" />
-            <element signature="e#4016#5484#0" expanded="true" />
-            <element signature="e#5483#5484#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/abcsforkids/GameFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-714">
+          <caret line="67" column="53" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3743#4036#0" expanded="true" />
+            <element signature="e#4035#4036#0" expanded="true" />
+            <element signature="e#4086#6116#0" expanded="true" />
+            <element signature="e#6115#6116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/abcsforkids/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5639">
+          <caret line="218" column="60" selection-start-line="218" selection-start-column="60" selection-end-line="218" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#16629#16630#0" expanded="true" />
+            <element signature="e#16661#16662#0" expanded="true" />
+            <element signature="e#16694#16695#0" expanded="true" />
+            <element signature="e#16723#16724#0" expanded="true" />
+            <element signature="e#16766#16767#0" expanded="true" />
+            <element signature="e#16799#16800#0" expanded="true" />
           </folding>
         </state>
       </provider>
