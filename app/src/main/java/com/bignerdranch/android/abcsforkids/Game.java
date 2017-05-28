@@ -216,7 +216,7 @@ public class Game {
             case 2:
                 return "game_screen_question_image_ball1";
             case 3:
-                return "game_screen_question_image_bee";+-*-
+                return "game_screen_question_image_bee";
             default:
                 return null;
         }

@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">ABCsForKids</string>
 
+    <string name="new_game">New Game</string>
+    <string name="return_home">Home Screen</string>
+    <string name="music_credit">Music: www.bensound.com</string>
+
     <string name="game_letter_a">A</string>
     <string name="game_letter_b">B</string>
     <string name="game_letter_c">C</string>

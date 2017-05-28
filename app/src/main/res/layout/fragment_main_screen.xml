@@ -7,19 +7,6 @@
     android:layout_height="match_parent"
     tools:context="com.bignerdranch.android.abcsforkids.MainScreenActivity">
 
-    <Button
-        android:id="@+id/main_activity_new_game_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginRight="48dp"
-        android:elevation="24dp"
-        android:text="New Game"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
 
     <ImageView
         android:id="@+id/mainactivityappimage"
@@ -32,6 +19,30 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/mainscreen_appnameimage"/>
-
+        app:srcCompat="@drawable/mainscreen_appnameimage"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginBottom="0dp"/>
+    <Button
+        android:id="@+id/main_activity_new_game_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/new_game"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-1dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:text="@string/music_credit"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
 </android.support.constraint.ConstraintLayout>

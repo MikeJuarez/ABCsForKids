@@ -14,14 +14,7 @@ public class GameImageBank {
     private static GameImageBank mGameImageBank;
     private List<Game> mGames;
 
-    public static GameImageBank get(Context context) {
-        if (mGameImageBank == null)
-            mGameImageBank = new GameImageBank(context);
-
-        return mGameImageBank;
-    }
-
-    private GameImageBank(Context context) {
+    public GameImageBank(Context context) {
         mGames = new ArrayList<>();
 
         mGames.add(new Game("a"));

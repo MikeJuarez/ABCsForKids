@@ -1,7 +1,9 @@
 package com.bignerdranch.android.abcsforkids;
 
+import android.content.Intent;
+import android.media.AudioAttributes;
+import android.media.SoundPool;
 import android.os.CountDownTimer;
-import android.os.Handler;
 import android.view.DragEvent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -14,7 +16,6 @@ import android.widget.TextView;
 
 
 import java.util.List;
-import java.util.logging.LogRecord;
 
 /**
  * Created by Michael Juarez on 5/22/2017.
@@ -32,13 +33,40 @@ public class GameFragment extends Fragment {
     private TextView letter4;
 
     private int letterIndex = 0;
-    private int correctAnswer = 0;
 
     Boolean booleanCorrectAnswer1 = false;
     Boolean booleanCorrectAnswer2 = false;
     Boolean booleanCorrectAnswer3 = false;
     Boolean booleanCorrectAnswer4 = false;
 
+    SoundPool soundPool;
+    SoundPool.Builder soundPoolBuilder;
+
+    AudioAttributes attributes;
+    AudioAttributes.Builder attributesBuilder;
+
+    int soundCorrect;
+    int soundHarp;
+    int soundHarpStream;
+    int soundWrong;
+
+    @Override
+    public void onCreate(Bundle savedInstanceBundle) {
+        super.onCreate(savedInstanceBundle);
+
+        attributesBuilder = new AudioAttributes.Builder();
+        attributesBuilder.setUsage(AudioAttributes.USAGE_GAME);
+        attributesBuilder.setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION);
+        attributes = attributesBuilder.build();
+
+        soundPoolBuilder = new SoundPool.Builder();
+        soundPoolBuilder.setAudioAttributes(attributes);
+        soundPool = soundPoolBuilder.build();
+
+        soundCorrect = soundPool.load(getActivity(), R.raw.correct, 1);
+        soundHarp = soundPool.load(getActivity(), R.raw.harp, 1);
+        soundWrong = soundPool.load(getActivity(), R.raw.wrong, 1);
+    }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceBundle){
         super.onCreateView(inflater, container, savedInstanceBundle);
@@ -65,7 +93,7 @@ public class GameFragment extends Fragment {
         In the future, I plan to have the option to randomize the letters.
     */
     private void displayImages() {
-        GameImageBank gameBank = GameImageBank.get(getActivity());
+        GameImageBank gameBank = new GameImageBank(getContext());
         List<Game> games = gameBank.getGameImageBank();
 
         String correctAnswer = games.get(letterIndex).getAnswerList().get(4);
@@ -92,7 +120,6 @@ public class GameFragment extends Fragment {
             booleanCorrectAnswer3 = true;
         else if (correctAnswer.equals(answer3))
             booleanCorrectAnswer4 = true;
-
     }
 
     private View.OnTouchListener TouchListener = new View.OnTouchListener() {
@@ -110,6 +137,7 @@ public class GameFragment extends Fragment {
             int dragEvent = event.getAction();
             switch (dragEvent) {
                 case DragEvent.ACTION_DRAG_ENTERED:
+                    soundHarpStream = soundPool.play(soundHarp,1,1,1,-1,1);
                     break;
                 case DragEvent.ACTION_DRAG_EXITED:
                     View exitView = (View) event.getLocalState();
@@ -117,48 +145,48 @@ public class GameFragment extends Fragment {
                     break;
                 case DragEvent.ACTION_DROP:
                     final View view = (View) event.getLocalState();
+                    soundPool.stop(soundHarpStream);
                     if (view.getId() == R.id.letter1) {
                         letter1.setVisibility(View.INVISIBLE);
                         if (booleanCorrectAnswer1) {
-                            gameImage.setImageResource(R.drawable.correct);
                             waitHelper();
+                            break;
                         }
+                        soundPool.play(soundWrong,1,1,1,0,1);
                     }
                     else if (view.getId() == R.id.letter2) {
                         letter2.setVisibility(View.INVISIBLE);
                         if (booleanCorrectAnswer2) {
-                            gameImage.setImageResource(R.drawable.correct);
                             waitHelper();
+                            break;
                         }
+                        soundPool.play(soundWrong,1,1,1,0,1);
 
                     }
                     else if (view.getId() == R.id.letter3) {
                         letter3.setVisibility(View.INVISIBLE);
                         if (booleanCorrectAnswer3) {
-                            gameImage.setImageResource(R.drawable.correct);
                             waitHelper();
+                            break;
                         }
-
+                        soundPool.play(soundWrong,1,1,1,0,1);
                     }
                     else if (view.getId() == R.id.letter4) {
                         letter4.setVisibility(View.INVISIBLE);
                         if (booleanCorrectAnswer4) {
-                            gameImage.setImageResource(R.drawable.correct);
-                            waitHelper();
-                        }
 
+                            waitHelper();
+                            break;
+                        }
+                        soundPool.play(soundWrong,1,1,1,0,1);
                     }
                     break;
             }
-
-
-
             return true;
         }
     };
 
     private void resetGameFragment() {
-
         letter1.setVisibility(View.VISIBLE);
         letter2.setVisibility(View.VISIBLE);
         letter3.setVisibility(View.VISIBLE);
@@ -171,6 +199,8 @@ public class GameFragment extends Fragment {
     }
 
     private void waitHelper() {
+        gameImage.setImageResource(R.drawable.correct);
+        soundPool.play(soundCorrect,1,1,0,0,1);
         new CountDownTimer(2000,1000){
 
             @Override
@@ -178,11 +208,22 @@ public class GameFragment extends Fragment {
 
             @Override
             public void onFinish(){
-                resetGameFragment();
                 letterIndex++;
-                displayImages();
+
+                if (letterIndex > 25)
+                    checkForEnd();
+                else {
+                    resetGameFragment();
+                    displayImages();
+                }
             }
         }.start();
 
     }
+
+    private void checkForEnd() {
+        Intent intent = new Intent(getContext(), CongratActivity.class);
+        startActivity(intent);
+    }
+
 }
